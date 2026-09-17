@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Placement Management System</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+
+        <header>
+            <h1>🎓 Placement Management System</h1>
+            <p>Manage students, companies and placement records</p>
+        </header>
+
+
+        <!-- Dashboard -->
+
+        <section class="dashboard">
+
+            <div class="box">
+                <h3>Total Students</h3>
+                <h2 id="students">0</h2>
+            </div>
+
+            <div class="box">
+                <h3>Total Companies</h3>
+                <h2 id="companies">0</h2>
+            </div>
+
+            <div class="box">
+                <h3>Students Placed</h3>
+                <h2 id="placed">0</h2>
+            </div>
+
+            <div class="box">
+                <h3>Placement Percentage</h3>
+                <h2 id="percentage">0%</h2>
+            </div>
+
+        </section>
+
+
+        <!-- Enter Details -->
+
+        <section class="form-section">
+
+            <h2>Enter Placement Details</h2>
+
+            <input
+                type="number"
+                id="studentInput"
+                placeholder="Total Students"
+            >
+
+            <input
+                type="number"
+                id="companyInput"
+                placeholder="Total Companies"
+            >
+
+            <input
+                type="number"
+                id="placedInput"
+                placeholder="Students Placed"
+            >
+
+            <button onclick="updateDashboard()">
+                Save Details
+            </button>
+
+        </section>
+
+
+        <!-- Navigation -->
+
+        <section class="menu">
+
+            <a href="students.html">
+                Students
+            </a>
+
+            <a href="companies.html">
+                Companies
+            </a>
+
+            <a href="placements.html">
+                Placements
+            </a>
+
+        </section>
+
+
+        <!-- Placement Information -->
+
+        <section class="info">
+
+            <h2>Placement Overview</h2>
+
+            <p>
+                Use this dashboard to monitor student placement
+                activities and maintain placement records.
+            </p>
+
+        </section>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
