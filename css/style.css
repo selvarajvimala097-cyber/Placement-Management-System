@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+
+/* Main Container */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+
+/* Header */
+
+header {
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+
+/* Dashboard */
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+
+/* Dashboard Boxes */
+
+.box {
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ddd;
+}
+
+.box h3 {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.box h2 {
+    font-size: 32px;
+}
+
+
+/* Form */
+
+.form-section {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px #ddd;
+}
+
+.form-section h2 {
+    margin-bottom: 20px;
+}
+
+.form-section input {
+    padding: 12px;
+    width: 220px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+button {
+    padding: 12px 20px;
+    background: #222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #444;
+}
+
+
+/* Menu */
+
+.menu {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.menu a {
+    background: white;
+    padding: 18px 30px;
+    text-decoration: none;
+    color: #222;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #ddd;
+}
+
+.menu a:hover {
+    background: #222;
+    color: white;
+}
+
+
+/* Information */
+
+.info {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ddd;
+}
+
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+    .dashboard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-section input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+}
